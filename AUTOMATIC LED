@@ -1,17 +1,21 @@
-int relay = 8;
-volatile byte relayState = LOW;
-
+//int relay = 8;
+//volatile byte relayState = LOW;
 // PIR Motion Sensor is connected to D2.
+
 int PIRInterrupt = 2;
 
 // LDR pin is connected to Analog 0
+
 int LDRPin = A0;
 // LDR value is stored on LDR reading
+
 int LDRReading;
 // LDR Threshold value
+
 int LDRThreshold = 300;
 
 // Timer Variables
+
 long lastDebounceTime = 0;  
 long debounceDelay = 1000;
 
